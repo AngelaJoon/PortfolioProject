@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content ="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Angela's Portfolio Website</title>
+</head>
+<body>
+    <nav><div class ="nav_content">
+            <div class ="logo"><a href="#">Angela</a></div>
+                <label for="check" class ="checkbox">
+                <i class="ri-menu-line"></i>
+                </label>
+                <input type="checkbox" name="check" id="check">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li id="gotoSkills"><a href="#">Skills</a></li>
+                    <li id="gotoPortfolio"><a href="#">Portfolio</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="section">
+            <div class="section_container">
+                <div class="content">
+                    <p class="subtitle">Hello</p>
+                    <h1 class="title">
+                        I'm <span>Angela<br>a</span> Coder
+                    </h1>
+                    <p class="description">
+                        I'm a high school student with a passion for video game development, 
+                        dreaming of shaping the future of gaming. 
+                        Having already created over 10 games, 
+                        I'm commited to crafting even more captivating and immersive expeeriences. 
+                        My journey in game design is just beginning, 
+                        and I'm excited to explore new possibilities and bring innovative ideas to life.
+                    </p>
+                    <div class="action_btns">
+                        <button id="scrollbutton" class="Portfolio">Portfolio</button>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="assets/profile.jpg" alt="profile"/>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+            <h1 class="headings">PORTFOLIO</h1>
+            <div id ="targetSection" class="gallery">
+                <img src="assets/image1.png" alt="">
+                <img src="assets/image2.png" alt="">
+                <img src="assets/image3.png" alt="">
+                <img src="assets/image4.png" alt="">
+                <img src="assets/image5.png" alt="">
+                <img src="assets/image6.png" alt="">
+            </div>
+        </section>
+        <section id="skills">
+            <h1 class="headings">SKILLS</h1>
+            <div class="row">
+                <div class="box">
+                    <h1 class="headings">Python</h1>
+                    <p>
+                        After extensive study and practice, I've mastered Python, a key programming language in tech. This effort led to a prestigious certification, proving my expertise in Python from scripting to complex development. This milestone not only highlights my coding skills but also paves the way for innovative opportunities in technology.
+                        </p>
+                </div>
+                <div class="box">
+                    <h1 class="headings">Game Development</h1>
+                    <p>
+                        As a proficient game developer, I've created over 10 games, showcasing my ability to innovate and engage players across various genres. My dedication to mastering game mechanics and storytelling is evident in my diverse and immersive portfolio.                        </p>
+                </div>
+                <div class="box">
+                    <h1 class="headings">Web Development</h1>
+                    <p>
+
+                        I excel in web development, with strong skills in HTML, CSS, and JavaScript for creating responsive designs, as well as experience with React and Node.js for full-stack development. My work focuses on building user-friendly, efficient websites that adhere to the latest industry standards.                        </p>
+                </div>
+            </div>
+        </section>
+        <script>
+            document.getElementById('scrollbutton').addEventListener('click', function() {
+    document.getElementById('targetSection').scrollIntoView({ 
+        behavior: 'smooth' 
+    });
+});
+
+        </script>
+        <script>
+            document.getElementById('gotoPortfolio').addEventListener('click', function() {
+    document.getElementById('portfolio').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+        </script>
+                <script>
+                    document.getElementById('gotoSkills').addEventListener('click', function() {
+            document.getElementById('skills').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+                </script>
+    </body>
+</html>
